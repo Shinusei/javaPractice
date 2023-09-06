@@ -17,11 +17,11 @@ public class Main {
             }
         }
         int arrSum = 0;
-        double arrMid = 0;
         for(int i : arr){
             arrSum += i;
         }
-        System.out.println(arrSum);
+        double arrMid = (double) arrSum /arrSize;
+        System.out.println(arrSum+" "+arrMid);
 
     }
 }
