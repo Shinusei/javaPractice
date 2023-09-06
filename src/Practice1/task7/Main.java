@@ -7,7 +7,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println(fact(scanner.nextInt()));
     }
-
     public static int fact(int num) {
         return num == 1 ? 1 : num*fact(num-1);
     }
