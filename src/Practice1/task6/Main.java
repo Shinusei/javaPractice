@@ -9,7 +9,7 @@ public class Main {
         if (down == 11){
             System.exit(0);
         }
-        double num = past + 1/down;
+        double num =  1/down;
         System.out.printf(String.format("%8.2f", num));
         counter(num, down+1);
         return 0;
