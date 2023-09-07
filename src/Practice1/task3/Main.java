@@ -14,6 +14,5 @@ public class Main {
         }
         double arrMid = (double) arrSum /arrSize;
         System.out.println(arrSum+" "+arrMid);
-
     }
 }
