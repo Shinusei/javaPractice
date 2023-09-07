@@ -9,6 +9,7 @@ public class Main {
         System.out.println(fact(scanner.nextInt()));
     }
     public static BigInteger fact(int num) {
+        if (num==0) return BigInteger.valueOf(1);
         return num == 1 ? BigInteger.valueOf(1) : BigInteger.valueOf(num).multiply(fact(num-1));
     }
 }
