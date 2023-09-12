@@ -35,8 +35,6 @@ public class Ball {
     public void move(double xDisp, double yDisp){
         setXY(getX()+xDisp, getY()+yDisp);
     }
-
-
     @Override
     public String toString() {
         return "Ball{" +
