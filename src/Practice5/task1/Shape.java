@@ -1,4 +1,4 @@
-package Practice3.task1;
+package Practice5.task1;
 
 public abstract class Shape {
 

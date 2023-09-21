@@ -1,4 +1,4 @@
-package Practice3.task2;
+package Practice5.task2;
 
 public class TestShape {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class TestShape {
         System.out.println(s1.getPerimeter()); // which version?
         System.out.println(s1.getColor());
         System.out.println(s1.isFilled());
-        System.out.println(s1.getRadius());
+        //System.out.println(s1.getRadius());
 
         Circle c1 = (Circle) s1; // downcast back to Circle
         System.out.println(c1);
@@ -19,13 +19,13 @@ public class TestShape {
         System.out.println(c1.isFilled());
         System.out.println(c1.getRadius());
 
-        Shape s2 = new Shape();
+        //Shape s2 = new Shape();
         Shape s3 = new Rectangle(1.0, 2.0, "RED", false); // upcast
         System.out.println(s3);
         System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColor());
-        System.out.println(s3.getLength());
+        //System.out.println(s3.getLength());
         Rectangle r1 = (Rectangle) s3; // downcast
         System.out.println(r1);
         System.out.println(r1.getArea());
@@ -35,7 +35,7 @@ public class TestShape {
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColor());
-        System.out.println(s4.getSide());
+        //System.out.println(s4.getSide());
 
         // Take note that we downcast Shape s4 to Rectangle,
 // which is a superclass of Square, instead of Square
@@ -43,7 +43,7 @@ public class TestShape {
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
-        System.out.println(r2.getSide());
+        //System.out.println(r2.getSide());
         System.out.println(r2.getLength());
         // Downcast Rectangle r2 to Square
         Square sq1 = (Square) r2;
