@@ -22,22 +22,26 @@ public class MovableRectangle {
     }
 
     public void moveUp() {
-        topLeft.y++;
-        bottomRight.y++;
+        if(!checkSpeed()) return;
+        topLeft.y+= topLeft.ySpeed;
+        bottomRight.y+= topLeft.ySpeed;
     }
 
     public void moveDown() {
-        topLeft.y--;
-        bottomRight.y--;
+        if(!checkSpeed()) return;
+        topLeft.y-= topLeft.ySpeed;
+        bottomRight.y-= topLeft.ySpeed;
     }
 
     public void moveLeft() {
-        topLeft.x--;
-        bottomRight.x--;
+        if(!checkSpeed()) return;
+        topLeft.x-= topLeft.xSpeed;
+        bottomRight.x-= topLeft.xSpeed;
     }
 
     public void moveRight() {
-        topLeft.x++;
-        bottomRight.x++;
+        if(!checkSpeed()) return;
+        topLeft.x+= topLeft.xSpeed;
+        bottomRight.x+= topLeft.xSpeed;
     }
 }

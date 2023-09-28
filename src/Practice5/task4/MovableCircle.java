@@ -17,18 +17,18 @@ public class MovableCircle {
     }
 
     public void moveUp() {
-        center.y++;
+        center.y += center.ySpeed;
     }
 
     public void moveDown() {
-        center.y--;
+        center.y-= center.ySpeed;
     }
 
     public void moveLeft() {
-        center.x--;
+        center.x-= center.xSpeed;
     }
 
     public void moveRight() {
-        center.x++;
+        center.x+= center.xSpeed;
     }
 }
