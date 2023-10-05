@@ -12,7 +12,7 @@ public abstract class Dog {
 
     @Override
     public String toString() {
-        return "Dog{" +
+        return "{" +
                 "furColor='" + furColor + '\'' +
                 ", friendly=" + friendly +
                 '}';

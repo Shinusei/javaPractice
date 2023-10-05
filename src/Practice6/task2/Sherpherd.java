@@ -15,6 +15,6 @@ public class Sherpherd extends Dog{
     public String toString() {
         return "Sherpherd{" +
                 "trainingPalace='" + trainingPalace + '\'' +
-                '}';
+                '}'+super.toString();
     }
 }

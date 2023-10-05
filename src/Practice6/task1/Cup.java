@@ -16,7 +16,7 @@ public class Cup extends Dish{
                 "type='" + type + '\'' +
                 ", size='" + size + '\'' +
                 ", drink='" + drink + '\'' +
-                '}';
+                '}'+super.toString();
     }
 
     @Override

@@ -15,7 +15,7 @@ public class Plate extends Dish{
         return "Plate{" +
                 "radius=" + radius +
                 ", meal='" + meal + '\'' +
-                '}';
+                '}'+super.toString();
     }
 
     @Override

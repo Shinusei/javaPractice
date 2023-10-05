@@ -11,7 +11,7 @@ public abstract class Dish {
 
     @Override
     public String toString() {
-        return "Dish{" +
+        return "{" +
                 "material='" + material + '\'' +
                 ", price=" + price +
                 '}';

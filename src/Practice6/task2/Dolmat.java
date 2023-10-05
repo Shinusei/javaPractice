@@ -15,7 +15,7 @@ public class Dolmat extends Dog{
         return "Dolmat{" +
                 "park='" + park + '\'' +
                 ", spotsCount=" + spotsCount +
-                '}';
+                '}'+super.toString();
     }
 
     @Override
