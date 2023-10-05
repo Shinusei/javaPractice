@@ -8,12 +8,11 @@ import java.awt.event.ActionListener;
 public class GUI extends JFrame{
     private int mil=0;
     private int mad=0;
-    private String las = "N/A";
     private String win ="Draw";
     JButton milan = new JButton("AC Milan");
     JButton madrid = new JButton("Real Madrid");
     JLabel result = new JLabel("Result: "+mil+" X "+mad);
-    JLabel last = new JLabel("Last scores: "+las);
+    JLabel last = new JLabel("Last scores: N/A");
     Label winner = new Label("Winner: "+win);
     GUI(){
         super("Football score");
@@ -25,8 +24,8 @@ public class GUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent ae) {
                 mil++;
-                las="Milan";
-                last.repaint();
+                last.setText("Last scores: AC Milan");
+                upd("AC Milan");
             }
         });
         add(madrid);
@@ -34,16 +33,25 @@ public class GUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent ae) {
                 mad++;
-                las="Madrid";
-                dispose();
+                last.setText("Last scores: Real Madrid");
+                upd("Real Madrid");
             }
         });
-        result.setBounds(10,70,100,20);
+        result.setBounds(10,70,1000,20);
         add(result);
-        last.setBounds(10,90,100,20);
+        last.setBounds(10,90,1000,20);
         add(last);
-        winner.setBounds(10,110,100,20);
+        winner.setBounds(20,110,1000,20);
         add(winner);
+    }
+    private void upd(String last){
+        result.setText("Result: " + mil + " X " + mad);
+        String w = "DRAW";
+        if(mil > mad)
+            w = "AC Milan";
+        else if (mad > mil)
+            w = "Real Madrid";
+        winner.setText("Winner: "+w);
     }
 
     public static void main(String[] args) {
