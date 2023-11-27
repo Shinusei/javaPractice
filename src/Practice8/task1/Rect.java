@@ -1,4 +1,4 @@
-package Practice8.task1t;
+package Practice8.task1;
 import java.awt.*;
 public class Rect extends Shape{
     //

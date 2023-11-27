@@ -1,4 +1,4 @@
-package Practice8.task1t;
+package Practice8.task1;
 
 import javax.swing.*;
 import java.awt.*;
