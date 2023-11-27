@@ -1,4 +1,4 @@
-package Practice8.task1;
+package Practice8.task1t;
 
 import javax.swing.*;
 import java.awt.*;
@@ -32,7 +32,7 @@ public class Printer extends JFrame {
         setVisible(true);
 
     }
-
+//
     public static void main(String[] args) {
         int nums[] = new int[20];
         for (int i = 0; i < 20; i++) {

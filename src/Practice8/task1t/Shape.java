@@ -1,7 +1,6 @@
-package Practice8.task1;
+package Practice8.task1t;
 
 import javax.swing.*;
-import java.awt.*;
 
 abstract public class Shape extends JPanel {
     protected int[] background_color = new int[3];
@@ -10,6 +9,7 @@ abstract public class Shape extends JPanel {
     public int[] getBackground_color() {
         return background_color;
     }
+    //
     public Shape() {
         this.background_color[0] = (int) (Math.random() * 255);
         this.background_color[1] = (int) (Math.random() * 255);
