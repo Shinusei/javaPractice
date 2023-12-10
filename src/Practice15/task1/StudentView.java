@@ -1,4 +1,4 @@
-package practice15.task1;
+package Practice15.task1;
 
 public class StudentView {
     public void printstudentDetails(Student student) {

@@ -14,15 +14,15 @@ public class LabClassUI extends JFrame {
     private JTable table;
 
     public LabClassUI(ArrayList<Student> students_arr){
-        super("Сведения о студентах");
+        super("Students info");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(520, 330);
         setResizable(false);
         this.students_arr = students_arr;
         JPanel panel = new JPanel(new FlowLayout());
-        JButton add_btn = new JButton("Добавить");
-        JButton sort_btn = new JButton("Отсортировать по GPA");
-        JButton search_btn = new JButton("Поиск");
+        JButton add_btn = new JButton("Add");
+        JButton sort_btn = new JButton("Sort by GPA");
+        JButton search_btn = new JButton("Find");
         panel.add(add_btn);
         panel.add(search_btn);
         panel.add(sort_btn);
@@ -33,7 +33,7 @@ public class LabClassUI extends JFrame {
             exist_stud[i][1] = ((Integer)(students_arr.get(i).getiDNumber())).toString();
             exist_stud[i][2] = ((Double)(students_arr.get(i).getGPA())).toString();
         }
-        table = new JTable( new DefaultTableModel(exist_stud, new String[] {"ФИО", "Номер", "GPA"})){
+        table = new JTable( new DefaultTableModel(exist_stud, new String[] {"Name", "ID", "GPA"})){
             @Override
             public boolean isCellEditable(int x, int y) {return false; }
         };
@@ -87,13 +87,13 @@ public class LabClassUI extends JFrame {
     }
 
     private void add() {
-        String fio = JOptionPane.showInputDialog("ФИО студента: ");
+        String fio = JOptionPane.showInputDialog("Student name: ");
         if(fio.isEmpty()) try {
             throw new EmptyStringException(this);
         } catch (EmptyStringException e) {
             throw new RuntimeException(e);
         }
-        String number = JOptionPane.showInputDialog("Номер дела:");
+        String number = JOptionPane.showInputDialog("ID:");
 
 
         if(number.isEmpty()) try {
@@ -114,28 +114,15 @@ public class LabClassUI extends JFrame {
     }
 
     private void find() throws StudentNotFoundException {
-        String search_val = JOptionPane.showInputDialog("Введите ФИО для поиска:");
+        String search_val = JOptionPane.showInputDialog("Write name:");
         for(int i = 0; i < students_arr.size(); i++){
             if(students_arr.get(i).getFio().equals(search_val)){
-                JOptionPane.showMessageDialog(this, "Результат: "+
+                JOptionPane.showMessageDialog(this, "Result: "+
                         students_arr.get(i).toString());
                 return;
             }
         }
         throw new StudentNotFoundException(search_val, this);
-    }
-
-    private void remove() {
-        int cnt = table.getSelectedRowCount();
-        if(cnt != 1) {
-            JOptionPane.showMessageDialog(this, "Необходимо выбрать строку для удаления");
-            return;
-        }
-        cnt = table.getSelectedRow();
-        students_arr.remove(cnt);
-        DefaultTableModel table_mod = (DefaultTableModel) table.getModel();
-        table_mod.removeRow(cnt);
-
     }
 }
 

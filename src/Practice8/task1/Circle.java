@@ -1,6 +1,5 @@
 package Practice8.task1;
 import java.awt.*;
-//
 public class Circle extends Shape {
     Circle(int position) {
         this.position = position;

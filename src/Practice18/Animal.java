@@ -1,5 +1,7 @@
 
 package Practice18;
 
-public class Animal {
+import java.io.Serializable;
+
+public class Animal implements Serializable {
 }

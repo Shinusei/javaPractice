@@ -23,7 +23,8 @@ public class Animation extends JFrame {
 
         while (true) {
             for (int i = 0; i < 17; i++) {
-                main.setIcon(new ImageIcon(ImageIO.read(new File("/home/aleksey/IdeaProjects/javaPractice/src/Practice8/task3/images/frame_"+i+"_delay-0.04s.jpg"))));
+                main.setIcon(new ImageIcon(ImageIO.read(new File("/home/aleksey/IdeaProjects/javaPractice/src/" +
+                        "Practice8/task3/images/frame_"+i+"_delay-0.04s.jpg"))));
                 TimeUnit.MILLISECONDS.sleep(100);
             }
         }

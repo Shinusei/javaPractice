@@ -1,6 +1,8 @@
 package Practice18;
 
-public class Exeption1<T extends String, V extends Animal, K extends Integer>{
+import java.io.Serializable;
+
+public class Exeption1<T extends String, V extends Animal & Serializable, K extends Comparable<K>>{
     private T v1;
     private  V v2;
     private  K v3;
@@ -44,6 +46,6 @@ public class Exeption1<T extends String, V extends Animal, K extends Integer>{
     }
     public static void main(String[] args){
         Exeption1<String, Animal, Integer> t = new Exeption1<>("Test", new Animal(), 5);
-        System.out.println(t.toString());
+        System.out.println(t);
     }
 }

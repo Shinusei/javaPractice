@@ -8,7 +8,7 @@ public class Matrix <T extends  Number>{
         this.b=b;
     }
     public void sum(){
-        System.out.println("Сумма: ");
+        System.out.println("Sum: ");
         for(int i=0; i<a.length;i++){
            for(int j=0;j<a.length;j++){
                 System.out.print(a[i][j].doubleValue()+b[i][j].doubleValue()+" ");
@@ -17,14 +17,14 @@ public class Matrix <T extends  Number>{
         }
     }
     public void print(){
-        System.out.println("Матрица A: ");
+        System.out.println("Matrix A: ");
         for (int i =0;i< a.length;i++){
             for (int j = 0;j<a.length;j++){
                 System.out.print(a[i][j]+" ");
             }
             System.out.println();
         }
-        System.out.println("Матрица B: ");
+        System.out.println("Matrix B: ");
         for (int i =0;i< b.length;i++){
             for (int j =0;j<b.length;j++){
                 System.out.print(b[i][j]+ " ");
@@ -34,7 +34,7 @@ public class Matrix <T extends  Number>{
     }
     public void multi(){
         double d[][] = new double[a.length][b.length];
-        System.out.println("Произведение матриц: ");
+        System.out.println("Multiply: ");
         for (int i =0;i<a.length;i++){
             for (int j=0;j<a.length;j++){
                 for (int k =0;k<a.length;k++){

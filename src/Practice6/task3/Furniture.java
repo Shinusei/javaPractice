@@ -80,7 +80,7 @@ public abstract class Furniture {
 
     @Override
     public String toString() {
-        return "modelName=" + modelName +
+        return "\nmodelName=" + modelName +
                 ", legCount=" + legCount +
                 ", height=" + height +
                 ", width=" + width +

@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class EmptyStringException extends IllegalArgumentException {
     public EmptyStringException(LabClassUI t) {
-        JOptionPane.showMessageDialog(t, "Введите необходимые данные в поле ввода!");
+        JOptionPane.showMessageDialog(t, "Invalid input");
     }
 }
 

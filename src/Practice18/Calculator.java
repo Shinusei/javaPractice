@@ -24,10 +24,10 @@ public class Calculator<T extends Number, V extends Number> {
 
     }
     public static void main(String[] args){
-        Calculator<Integer, Integer> r = new Calculator<>(1, 0);
-        System.out.println("Сумма: "+r.sum());
-        System.out.println("Вычитание: " + r.divide());
-        System.out.println("Умножение: " +r.multiply());
-        System.out.println("Деление: " + r.subtraction());
+        Calculator<Integer, Integer> r = new Calculator<>(1, 5);
+        System.out.println("Sum: "+r.sum());
+        System.out.println("Divide: " + r.divide());
+        System.out.println("Multiply: " +r.multiply());
+        System.out.println("Subtraction: " + r.subtraction());
     }
 }

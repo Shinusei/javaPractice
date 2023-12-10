@@ -21,10 +21,10 @@ public class Human {
     public String toString() {
         return "Human{" +
                 "head=" + head +
-                ", leftLeg=" + leftLeg +
-                ", rightLeg=" + rightLeg +
-                ", leftHand=" + leftHand +
-                ", rightHand=" + rightHand +
+                ",\n leftLeg=" + leftLeg +
+                ",\n rightLeg=" + rightLeg +
+                ",\n leftHand=" + leftHand +
+                ",\n rightHand=" + rightHand +
                 '}';
     }
 }

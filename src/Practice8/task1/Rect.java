@@ -1,7 +1,6 @@
 package Practice8.task1;
 import java.awt.*;
 public class Rect extends Shape{
-    //
     Rect (int position) {
         this.position = position;
     }
