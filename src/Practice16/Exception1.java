@@ -1,4 +1,4 @@
-package Task16;
+package Practice16;
 
 public class Exception1 {
     public static void exceptionDemo(){

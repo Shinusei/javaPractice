@@ -1,4 +1,4 @@
-package Task16;
+package Practice16;
 
 import java.util.*;
 

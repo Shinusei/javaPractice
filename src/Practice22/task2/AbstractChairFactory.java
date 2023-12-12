@@ -1,2 +1,7 @@
-package Practice22.task2;public interface AbstractChairFactory {
+package Practice22.task2;
+
+public interface AbstractChairFactory {
+    VictorianChair createVictorianChair();
+    MagicChair createMagicChair();
+    FunctionalChair createFunctionalChair();
 }

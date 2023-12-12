@@ -3,7 +3,6 @@ package Practice20.task2;
 import javax.swing.*;
 import java.awt.*;
 
-// Представление (View)
 class CalculatorView {
     private JFrame frame;
     private JTextField display;

@@ -1,4 +1,4 @@
-package Task21;
+package Practice21;
 
 public class ArrayQueueADT {
     public ArrayQueueADT(ArrayQueueModule queue){

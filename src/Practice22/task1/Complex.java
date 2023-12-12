@@ -1,4 +1,4 @@
-package Practice22;
+package Practice22.task1;
 
 class Complex {
     private int real;
@@ -28,5 +28,10 @@ class Complex {
 
     public int getImage() {
         return image;
+    }
+
+    @Override
+    public String toString() {
+        return "Complex: "+real+'+'+image+'i';
     }
 }

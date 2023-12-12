@@ -1,4 +1,4 @@
-package Task21;
+package Practice21;
 
 public interface Queue {
     void enqueue(Object o);

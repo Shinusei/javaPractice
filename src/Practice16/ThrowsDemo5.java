@@ -1,4 +1,4 @@
-package Task16;
+package Practice16;
 
 public class ThrowsDemo5 {
     public static String getDetails1(String key){

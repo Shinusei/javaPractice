@@ -1,9 +1,8 @@
-package Task21;
+package Practice21;
 
 public class TestArray {
     public static void main(String[] args) {
         ArrayQueueModule m = new ArrayQueueModule();
-       // b.dequeue();
         m.enqueue(1);
         m.enqueue(2);
         m.enqueue(3);

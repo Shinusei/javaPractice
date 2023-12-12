@@ -1,2 +1,8 @@
-package Practice22.task2;public class Chair {
+package Practice22.task2;
+
+interface Chair {
 }
+
+
+
+

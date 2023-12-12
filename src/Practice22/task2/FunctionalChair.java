@@ -1,8 +1,7 @@
 package Practice22.task2;
 
-class MultifunctionalChair implements Chair {
-    @Override
-    public void sit() {
-        System.out.println("Sitting on a Multifunctional chair");
+class FunctionalChair implements Chair {
+    public int sum(int a, int b){
+        return a+b;
     }
 }
