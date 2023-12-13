@@ -39,4 +39,5 @@ public class InvalidINN extends Exception {
             System.out.println(e.getLocalizedMessage());
         }
     }
+
 }

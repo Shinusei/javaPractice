@@ -28,6 +28,6 @@ public class ThrowsDemo8 {
     }
     public static void main(String[] args) {
         ThrowsDemo8 n = new ThrowsDemo8();
-        n.getKey();
+        n.getKey();n.getKey();
     }
 }

@@ -10,7 +10,7 @@ public class ThrowsDemo6 {
         System.out.println(key);
     }
     public  String getDetails(String key){
-        if (key == null){
+        if (key.equals(null)){
             throw new NullPointerException("null key in getDetails");
         }
         return "data for " + key;

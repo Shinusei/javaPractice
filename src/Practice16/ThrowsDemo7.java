@@ -21,6 +21,6 @@ public class ThrowsDemo7 {
     }
     public static void main(String[] args) throws Exception {
         ThrowsDemo7 n = new ThrowsDemo7();
-        n.getKey();
+        n.getKey();n.getKey();
     }
 }

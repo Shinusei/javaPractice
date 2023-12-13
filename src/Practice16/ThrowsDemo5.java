@@ -2,14 +2,14 @@ package Practice16;
 
 public class ThrowsDemo5 {
     public static String getDetails1(String key){
-        if (key == null) {
+        if (key.equals(null)) {
             throw new NullPointerException("null key in getDetails");
         }
         return key;
     }
     public static String getDetails(String key){
         try {
-            if (key == null){
+            if (key.equals(null)){
                 throw new NullPointerException("null key in getDetails");
 
             }
