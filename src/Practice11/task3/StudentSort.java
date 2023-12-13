@@ -44,7 +44,7 @@ public class StudentSort {
             StudentGPA s = new StudentGPA();
             s.quick_sort(students, 0, students.length - 1);
             for (int i = 0; i < students.length; i++) {
-                System.out.println(students[i].getGPA());
+                System.out.println(students[i].getName()+": "+students[i].getGPA());
 
             }
         }

@@ -1,13 +1,10 @@
 package Practice11.task2;
-
 import java.util.Comparator;
-
 public class StudentGPA implements Comparator<Student> {
     @Override
     public int compare(Student student1, Student student2) {
         return Double.compare(student1.getGPA(),student2.getGPA());
     }
-
     public void quick_sort(Student arr[], int begin, int end) {
         if (begin < end) {
             int partIndex = part(arr, begin, end);
@@ -31,7 +28,6 @@ public class StudentGPA implements Comparator<Student> {
         arr[end] = swapt;
         return i + 1;
     }
-
     public static void main(String[] args) {
         Student[] students = new Student[5];
         students[0] = new Student("Alice", 5);
@@ -42,8 +38,7 @@ public class StudentGPA implements Comparator<Student> {
         StudentGPA s = new StudentGPA();
         s.quick_sort(students,0, students.length - 1);
         for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].getGPA());
-
+            System.out.println(students[i].getName()+": "+students[i].getGPA());
         }
     }
 }

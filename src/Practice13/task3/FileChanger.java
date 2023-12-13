@@ -14,10 +14,8 @@ public class FileChanger {
         System.out.println("Enter the file name: ");
         String fileName = scanner.nextLine();
         fileName = "src/Practice13/"+fileName;
-
         System.out.println("Enter the old text: ");
         String oldText = scanner.nextLine();
-
         System.out.println("Enter the new text: ");
         String newText = scanner.nextLine();
 

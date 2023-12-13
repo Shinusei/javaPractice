@@ -1,6 +1,5 @@
 package Practice11.task1;
 
-
 public class Student {
     private final String name;
     private final int iDNumber;
@@ -11,5 +10,9 @@ public class Student {
     }
     public int getiDNumber() {
         return iDNumber;
+    }
+
+    public String getName() {
+        return name;
     }
 }

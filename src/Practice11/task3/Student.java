@@ -13,4 +13,8 @@ public class Student {
     public int getGPA() {
         return GPA;
     }
+
+    public String getName() {
+        return name;
+    }
 }

@@ -20,7 +20,7 @@ public class StudentTest {
         }
 
         for (Student student : students) {
-            System.out.println(student.getiDNumber());
+            System.out.println(student.getName()+": "+student.getiDNumber());
         }
     }
 }

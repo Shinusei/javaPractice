@@ -1,6 +1,6 @@
 package Practice23;
 
-public final class Drink {
+public final class Drink implements Item{
 
     public static final int DEFAULT_COST = 0;
 
@@ -18,14 +18,17 @@ public final class Drink {
         this.description = description;
     }
 
+    @Override
     public int getCost() {
         return cost;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public String getDescription() {
         return description;
     }

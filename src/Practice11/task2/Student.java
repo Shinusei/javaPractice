@@ -10,7 +10,12 @@ public class Student {
         this.GPA = GPA;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public int getGPA() {
         return GPA;
     }
+
 }

@@ -41,19 +41,19 @@ public class DList {
         String str2;
 
         while (true) {
-            System.out.println("Введите набор карт для игрока 1:");
+            System.out.println("Cards for player 1:");
             str1 = scanner.next();
-            System.out.println("Введите набор карт для игрока 2:");
+            System.out.println("Cards for player 2:");
             str2 = scanner.next();
             String str = str1 + str2;
             char[] str_char_arr = str.toCharArray();
             Arrays.sort(str_char_arr);
             String new_str = new String(str_char_arr);
             if (new_str.equals("0123456789")) break;
-            System.out.println("Неверные входные данные");
+            System.out.println("Wrong input");
         }
 
 
-        System.out.println("Результат: " + new DList(str1,str2).play());
+        System.out.println("Result: " + new DList(str1,str2).play());
     }
 }
