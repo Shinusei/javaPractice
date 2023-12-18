@@ -18,7 +18,7 @@ public class StoreAny <T>{
         if (index >= 0 && index < array.length) {
             return array[index];
         } else {
-            throw new IllegalArgumentException("Index out of bounds");
+            throw new IllegalArgumentException("Index out of range");
         }
     }
 }
