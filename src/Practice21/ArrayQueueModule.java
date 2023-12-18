@@ -13,7 +13,7 @@ public class ArrayQueueModule {
     }
     public void enqueue(int element){
         if(count==SIZE){
-            throw new IllegalStateException("Переполнение массива");
+            throw new IllegalStateException("Array is full");
         }
         if(isEmpty()){
             front=rear=0;

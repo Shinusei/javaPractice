@@ -1,6 +1,5 @@
 package Practice20.task2;
 
-// Модель (Model)
 class CalculatorModel {
     private double currentValue;
     private double previousValue;

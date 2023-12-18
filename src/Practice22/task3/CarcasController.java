@@ -1,9 +1,7 @@
 package Practice22.task3;
-
 import javax.swing.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 public class CarcasController {
     private final CarcasModel model;
     private final CarcasView view;
@@ -16,7 +14,6 @@ public class CarcasController {
             model.setDocument(new CreateTextDoc().CreateNew());
             view.showDocText((TextDocument) model.getDocument());
         });
-
         view.addOpenListener(e -> {
             try {
                 model.setDocument(new CreateTextDoc().CreateOpen(((CarcasView.openDocA) e).getPath()));
@@ -25,7 +22,6 @@ public class CarcasController {
                 JOptionPane.showMessageDialog(view, "File does not exist");
             }
         });
-
         view.addSaveListener(e -> {
             var document = ((CarcasView.saveDocA) e).getDocument();
             System.out.println("Saved");
@@ -36,7 +32,6 @@ public class CarcasController {
             }
         });
     }
-
     void showWindow() {
         this.view.setVisible(true);
     }

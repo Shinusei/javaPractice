@@ -47,8 +47,8 @@ class CalculatorView {
         }
         operationButtons[2].setFont(new Font("Arial", Font.BOLD, 18));
         panel.add(operationButtons[2]);
-            numberButtons[0] = new JButton(String.valueOf(0));
-            panel.add(numberButtons[0]);
+        numberButtons[0] = new JButton(String.valueOf(0));
+        panel.add(numberButtons[0]);
         operationButtons[3].setFont(new Font("Arial", Font.BOLD, 18));
         panel.add(operationButtons[3]);
 

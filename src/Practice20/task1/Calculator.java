@@ -56,7 +56,7 @@ public class Calculator {
                             throw new Exception("Divide by 0");
                         }
                     }catch (Exception e){
-                        System.out.println("Wrong input");
+                        System.out.println("Divide by 0");
                         exit(1);
                     }
                     break;

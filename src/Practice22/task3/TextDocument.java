@@ -1,13 +1,10 @@
 package Practice22.task3;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-
 public class TextDocument implements IDocument {
     private String text;
     private String name;
-
     TextDocument(String name) {
         this.name = name;
     }
@@ -16,7 +13,6 @@ public class TextDocument implements IDocument {
         this.name = name;
         this.text = text;
     }
-
     @Override
     public String getName() {
         return name;
